@@ -1,0 +1,112 @@
+
+.dashboard {
+  min-height: 100vh;
+  padding: 2rem;
+  background-color: cornsilk;
+  background-image: radial-gradient(rgba(111, 66, 170, 0.164) 1px, transparent 2px);
+  background-size: 12px 12px; /
+}
+
+.dashboard-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.dashboard-header {
+  background-color: rgba(255, 248, 220, 0);
+  border-radius: 24px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 
+    0 8px 24px rgba(87, 83, 78, 0.08),
+    0 0 0 1px rgba(168, 162, 158, 0.1);
+}
+
+.dashboard-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #57534e;
+  margin-bottom: 0.5rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  background-color: cornsilk;
+}
+
+.dashboard-subtitle {
+  font-size: 1.125rem;
+  color: #a8a29e;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+}
+
+.dashboard-content {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.dashboard-card {
+  background: linear-gradient(135deg, #fefcfb 0%, #ffffff 100%);
+  border-radius: 24px;
+  padding: 2rem;
+  box-shadow: 
+    0 8px 24px rgba(87, 83, 78, 0.08),
+    0 0 0 1px rgba(168, 162, 158, 0.1);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.dashboard-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 
+    0 16px 32px rgba(87, 83, 78, 0.12),
+    0 0 0 1px rgba(139, 92, 246, 0.1);
+}
+
+.dashboard-card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #57534e;
+  margin-bottom: 1rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+}
+
+/* Stats Cards */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.stat-card {
+  background: linear-gradient(135deg, #8b5cf6 0%, #a855f7 100%);
+  color: white;
+  padding: 1.5rem;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(139, 92, 246, 0.2);
+}
+
+.stat-number {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+}
+
+.stat-label {
+  font-size: 0.875rem;
+  opacity: 0.9;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+}
+
+
+.quick-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.quick-action {
+  flex: 1;
+  min-width: 150px;
+}

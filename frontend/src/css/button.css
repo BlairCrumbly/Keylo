@@ -1,0 +1,126 @@
+.btn {
+  font-weight: 600;
+  border-radius: 16px;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  outline: none;
+  position: relative;
+  cursor: pointer;
+  font-size: 16px;
+  min-height: 52px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn:focus {
+  box-shadow: 0 0 0 4px rgba(139, 92, 246, 0.2), 0 4px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-1px);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+/* Primary - Warm Purple */
+.btn-primary {
+  color: #fff;
+  background: linear-gradient(135deg, #8b5cf6 0%, #a855f7 100%);
+  box-shadow: 0 4px 14px rgba(139, 92, 246, 0.25);
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #7c3aed 0%, #9333ea 100%);
+  box-shadow: 0 6px 20px rgba(139, 92, 246, 0.35);
+  transform: translateY(-2px);
+}
+
+/* Secondary - Warm Cream */
+.btn-secondary {
+  color: #78716c;
+  background: linear-gradient(135deg, #fef7ed 0%, #fdf4e1 100%);
+  border: 1px solid #e7e5e4;
+  box-shadow: 0 2px 8px rgba(120, 113, 108, 0.1);
+}
+
+.btn-secondary:hover {
+  background: linear-gradient(135deg, #fef2e2 0%, #fed7aa 100%);
+  border-color: #d6d3d1;
+  box-shadow: 0 4px 14px rgba(120, 113, 108, 0.15);
+  transform: translateY(-1px);
+}
+
+/* Danger - Warm Coral */
+.btn-danger {
+  color: #fff;
+  background: linear-gradient(135deg, #f87171 0%, #ef4444 100%);
+  box-shadow: 0 4px 14px rgba(248, 113, 113, 0.25);
+}
+
+.btn-danger:hover {
+  background: linear-gradient(135deg, #f56565 0%, #dc2626 100%);
+  box-shadow: 0 6px 20px rgba(248, 113, 113, 0.35);
+  transform: translateY(-2px);
+}
+
+/* Sizes */
+.btn-sm {
+  padding: 12px 20px;
+  font-size: 14px;
+  min-height: 44px;
+  border-radius: 12px;
+}
+
+.btn-md {
+  padding: 16px 24px;
+  font-size: 16px;
+  min-height: 52px;
+}
+
+.btn-lg {
+  padding: 20px 32px;
+  font-size: 18px;
+  min-height: 60px;
+  border-radius: 20px;
+}
+
+/* Loading */
+.btn-loading {
+  position: relative;
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.btn-loading::after {
+  content: '';
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: rgba(255, 255, 255, 0.8);
+  animation: spin 1s ease-in-out infinite;
+}
+
+.spinner {
+  animation: spin 1s linear infinite;
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+.spinner-bg {
+  opacity: 0.25;
+}
+
+.spinner-fg {
+  opacity: 0.75;
+}
+
+
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
