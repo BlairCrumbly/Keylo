@@ -258,7 +258,7 @@ POST   /api/credentials           # Create new credential
 PUT    /api/credentials/{id}      # Update credential
 DELETE /api/credentials/{id}      # Delete credential
 ```
-```
+
 
 ## 🔒 Security Best Practices
 
