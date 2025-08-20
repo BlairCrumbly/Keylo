@@ -2,7 +2,7 @@
 .dashboard {
   min-height: 100vh;
   padding: 2rem;
-  background-color: cornsilk;
+  background-color: rgb(244, 240, 249);
   background-image: radial-gradient(rgba(111, 66, 170, 0.164) 1px, transparent 2px);
   background-size: 12px 12px; /
 }
