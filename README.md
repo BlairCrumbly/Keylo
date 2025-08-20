@@ -260,7 +260,7 @@ DELETE /api/credentials/{id}      # Delete credential
 ```
 
 
-## 🔒 Security Best Practices
+##  🛡️ Security Best Practices
 
 ### Implemented
 -  Environment-based secrets management
